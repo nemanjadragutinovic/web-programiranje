@@ -1,0 +1,55 @@
+.users {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    width: 70%;
+    border-collapse: collapse;
+    background-color: #ffffff;
+}
+
+
+
+.users td, .users th {
+    font-size: 1em;
+    border: 1px solid rgb(0, 0, 255);
+    padding: 3px 7px 2px 7px;
+}
+
+.users th {
+    font-size: 1.1em;
+    text-align: left;
+    padding-top: 5px;
+    padding-bottom: 4px;
+    background-color: rgb(0, 0, 255);
+    color: #ffffff;
+}
+
+.option {
+    font-size: 18px;
+    padding: 5px;
+}
+.select{
+	font-size: 18px;
+	border-radius: 10px;
+	height:40px;
+	outline:none;
+}
+tr.selected{
+	background-color: #aaaaaa;
+}
+
+
+.tabelaInformacijaOKorisniku{
+	
+	margin-left:auto;
+	margin-right:auto;
+	border: solid 1px rgb(0, 0, 0);
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+	background: rgb(255,255,255);
+	
+	
+}
+
+
+

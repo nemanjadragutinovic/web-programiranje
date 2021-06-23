@@ -1,0 +1,132 @@
+
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Apartments</title>
+
+<link href="css/headerstyle.css" rel="stylesheet" type="text/css"/>
+<link href="css/registrationstyle.css" rel="stylesheet" type="text/css"/>
+<link href="css/userstable.css" rel="stylesheet" type="text/css"/>
+<link href="css/dropdown.css" rel="stylesheet" type="text/css"/>
+<link href="css/search.css" rel="stylesheet" type="text/css"/>
+<link href="css/amenity.css" rel="stylesheet" type="text/css"/>
+<link href="css/apartmentView.css" rel="stylesheet" type="text/css"/>
+<link href="css/apartmentGalleryDetails.css" rel="stylesheet" type="text/css"/>
+
+
+
+
+<link href="css/toast.css" rel="stylesheet" />
+<script src="scripts/toast.js"></script>
+<script src="scripts/jquery.min.js"></script>
+
+
+</head>
+<body class="pozadina">
+<div id="initialSearch">
+
+<div class="header" id="header">
+	<div class="container">
+		<div class="logo">
+			<h1><a href="#/">Apartments</a></h1>
+		</div>
+			<div class="nav">
+				<ul>
+					
+					
+					<li v-bind:hidden="mod!='ADMIN'">
+						<div class="dropdown">
+						    <button class="dropbtn">Pregled korisnika 
+						      <i class="fa fa-caret-down"></i>
+						    </button>
+						    <div class="dropdown-content">
+						      <a href="#/users">Svi korisnici</a>	
+						      <a href="#/register">Registracija domacina</a>					      
+						    </div>
+					  </div> 
+					</li>
+					
+					<li v-bind:hidden="mod!='HOST'">
+						<div class="dropdown">
+						    <button class="dropbtn">Apartmani 
+						      <i class="fa fa-caret-down"></i>
+						    </button>
+						    <div class="dropdown-content">
+						      <a href="#/apartment">Dodavanje apartmana</a>
+						    </div>
+					  </div> 
+					</li>
+					
+					
+					<li v-bind:hidden="mod!='ADMIN'">
+						<div class="dropdown">
+						    <button class="dropbtn">Apartmani 
+						      <i class="fa fa-caret-down"></i>
+						    </button>
+						    <div class="dropdown-content">
+						      <a href="#/amenities">Sadrzaji apartmana</a>
+						    </div>
+					  </div> 
+					</li>
+					
+					
+					<li v-bind:hidden="mod!='HOST'">
+						<div class="dropdown">
+						    <button class="dropbtn">Pregled gostiju
+						      <i class="fa fa-caret-down"></i>
+						    </button>
+						    <div class="dropdown-content">
+						      <a href="#/users">Gosti</a>
+						    </div>
+					  </div> 
+					</li>
+					
+					
+					<li v-bind:hidden="mod=='USER'">
+						<div class="dropdown">
+						    <button class="dropbtn">Nalog 
+						      <i class="fa fa-caret-down"></i>
+						    </button>
+						    <div class="dropdown-content">
+						      <a href="#/account">Profil</a>
+						      <a href="#/login" v-on:click="odjavaEvents">Odjava</a>
+						    </div>
+					  </div> 
+					</li>	
+					
+					
+					
+																		
+					<li><a v-bind:hidden="mod!='USER'" href="#/login">Prijava</a></li>
+					<li><a v-bind:hidden="mod!='USER'" href="#/register">Registracija</a></li>
+					<li><a v-bind:hidden="mod=='USER'" href="#/reservations">Rezervacije</a></li>
+						
+				</ul>
+            </div>
+     </div>
+</div>
+<router-view></router-view>
+
+
+</div>
+	<script src="scripts/vue.js"></script>
+	<script src="scripts/vue-router.js"></script>
+	<script src="scripts/vuejs-datepicker.min.js"></script>
+	<script src="scripts/axios.js"></script>
+	<script src="scripts/moment.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/places.js@1.19.0"></script>
+	<script src="js/homepage.js"></script>
+	<script src="js/registration.js"></script>
+	<script src="js/users.js"></script>
+	<script src="js/account.js"></script>
+	<script src="js/login.js"></script>
+	<script src="js/apartment.js"></script>
+	<script src="js/amenities.js"></script>
+	<script src="js/reservations.js"></script>
+	<script src="js/apartmentDetail.js"></script>
+	<script src="js/reservation.js"></script>
+	
+	<script src="js/app.js"></script>
+
+</body>
+</html>

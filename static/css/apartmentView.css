@@ -1,0 +1,21 @@
+.polozajOkvira{
+	margin-left:auto;
+	margin-right:auto;
+	
+	
+}
+
+.tabelaPrikazaApartmanaUOkviru{
+	
+	margin-left:auto;
+	margin-right:auto;
+	margin-bottom:30px;
+	border: solid 2px rgb(0, 0, 0);
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+	background: rgb(224,224,224);
+	
+	
+}
